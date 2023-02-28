@@ -6,28 +6,27 @@ import java.util.logging.*;
 
 public class Hashset {
 
-	public static void main(String[] args) {
-		HashSet hs = new HashSet();
+	void hashSet() {
+		HashSet<Integer> hst = new HashSet<Integer>();
 		Logger log=Logger.getLogger("hi");
-		hs.add(5);
-		hs.add(50.23);
-		hs.add(500);
-		hs.add(52);
-		hs.add(51);
-		hs.add(5);
-		log.info("Elements are"+String.valueOf(hs));
-		hs.remove(51);
-		log.info("After removing the elements are"+String.valueOf(hs));
-		log.info("Size of Hashset is "+String.valueOf(hs.size())); 
-		LinkedList ll = new LinkedList();
-		ll.add(23);
-		ll.add(45);
-		ll.add("hi");
-		ll.add('c');
-		ll.add(23);
+		hst.add(5);
+		hst.add(500);
+		hst.add(52);
+		hst.add(51);
+		hst.add(5);
+		log.info("Elements are"+String.valueOf(hst));
+		hst.remove(51);
+		log.info("After removing the elements are"+String.valueOf(hst));
+		log.info("Size of Hashset is "+String.valueOf(hst.size())); 
+		LinkedList<String> ll = new LinkedList<String>();
+		ll.add("hello");
+		ll.add("how");
+		ll.add("are");
+		ll.add("you");
+		ll.add("?");
 		log.info("Values in LinkedList"+String.valueOf(ll));
 		
-		HashSet hs1 = new HashSet(ll);
+		HashSet<String> hs1 = new HashSet<String>(ll);
 		log.info("Values after adding linkedlist elements"+String.valueOf(hs1));
 		hs1.clear();
 		log.info("Values after cleared"+String.valueOf(hs1));
