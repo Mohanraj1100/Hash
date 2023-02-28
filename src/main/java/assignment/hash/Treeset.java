@@ -17,7 +17,7 @@ public class Treeset {
 		t.add(1);
 		t.add(10);
 		log.log(Level.INFO,()->"Values are"+t);
-		log.info("Size of map"+String.valueOf(t.size()));
+		log.log(Level.INFO,()->"Size of map"+t.size());
 		t.clear();
 		log.log(Level.INFO,()->"Values after cleared"+t);
 		ArrayList<Integer> al = new ArrayList<Integer>();
