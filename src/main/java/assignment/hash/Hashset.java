@@ -14,23 +14,23 @@ public class Hashset {
 		hst.add(52);
 		hst.add(51);
 		hst.add(5);
-		log.info("Elements are"+String.valueOf(hst));
+		log.log(Level.INFO,()->"Elements are"+hst);
 		hst.remove(51);
-		log.info("After removing the elements are"+String.valueOf(hst));
-		log.info("Size of Hashset is "+String.valueOf(hst.size())); 
+		log.log(Level.INFO,()->"After removing the elements are"+hst);
+		log.log(Level.INFO,()->"Size of Hashset is "+hst.size()); 
 		LinkedList<String> ll = new LinkedList<String>();
 		ll.add("hello");
 		ll.add("how");
 		ll.add("are");
 		ll.add("you");
 		ll.add("?");
-		log.info("Values in LinkedList"+String.valueOf(ll));
+		log.log(Level.INFO,()->"Values in LinkedList"+ll);
 		
 		HashSet<String> hs1 = new HashSet<String>(ll);
-		log.info("Values after adding linkedlist elements"+String.valueOf(hs1));
+		log.log(Level.INFO,()->"Values after adding linkedlist elements"+hs1);
 		hs1.clear();
-		log.info("Values after cleared"+String.valueOf(hs1));
-		log.info("Size after cleared  "+String.valueOf(hs1.size()));
+		log.log(Level.INFO,()->"Values after cleared"+hs1);
+		log.log(Level.INFO,()->"Size after cleared  "+hs1.size());
 		
 		
 		
