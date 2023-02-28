@@ -2,6 +2,7 @@ package assignment.hash;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Treeset {
@@ -15,16 +16,16 @@ public class Treeset {
 		t.add(45);
 		t.add(1);
 		t.add(10);
-		log.info("Values are"+String.valueOf(t));
+		log.log(Level.INFO,()->"Values are"+t);
 		log.info("Size of map"+String.valueOf(t.size()));
 		t.clear();
-		log.info("Values after cleared"+String.valueOf(t));
+		log.log(Level.INFO,()->"Values after cleared"+t);
 		ArrayList<Integer> al = new ArrayList<Integer>();
 		al.add(1);
 		al.add(4);
 		al.add(0);
 		TreeSet<Integer> t1 = new TreeSet<Integer>(al);
-		log.info("After get elements from ArrayList"+String.valueOf(t1));
+		log.log(Level.INFO,()->"After get elements from ArrayList"+t1);
 		
 
 	}
